@@ -1,0 +1,26 @@
+show databases;
+use college;
+show tables;
+select * from student;
+insert into student()values(3,"ABC","Nashik",84,87,"civil",20000),
+							(4,"DEF","Nashik",95,87,"Mech",10000),
+                            (5,"ABC","solapur",99,89,"Mech",10000),
+                            (6,"Naman","Satara",44,57,"It",30000);
+                         
+select s.*,
+Max(fees) over()
+from student s;
+
+select s.*,
+Max(fees) over(partition by dept)
+from student s;
+
+select s.*,
+row_number() over() as rn 
+from student s;
+
+select s.*,
+row_number() over(partition by dept) as rn 
+from student s;
+
+
