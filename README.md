@@ -1,2 +1,5 @@
 # SQL-Windows-Function
-SQL practical
+-Row_Number()
+-Rank()
+-Dense-Rank()
+
