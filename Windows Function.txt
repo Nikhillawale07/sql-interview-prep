@@ -24,3 +24,11 @@ row_number() over(partition by dept) as rn
 from student s;
 
 
+/*DENSE_RANK*/
+SELECT 
+    Name, 
+   fees, 
+    DENSE_RANK() OVER (ORDER BY fees DESC) AS SalaryRank
+FROM Student;
+
+
